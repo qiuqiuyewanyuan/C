@@ -1,7 +1,8 @@
 #include<stdio.h>
-void main()
+#include<conio.h>
+int main()
 {
-    int i=1;                  /*iÎªËùÉèµÄ½×ÌİÊı*/
+    int i=1;                  /*iä¸ºæ‰€è®¾çš„é˜¶æ¢¯æ•°*/
     clrscr();
     puts("**************************************************");
     puts("*        This program is to solve                *");
@@ -17,8 +18,9 @@ void main()
     puts("* the ladder?                                    *");
     puts("**************************************************");
     while(!((i%2==1)&&(i%3==2)&&(i%5==4)&&(i%6==5)&&(i%7==0)))
-        ++i;                  /*Âú×ãÒ»×éÍ¬ÓàÊ½µÄÅĞ±ğ*/
+        ++i;                  /*æ»¡è¶³ä¸€ç»„åŒä½™å¼çš„åˆ¤åˆ«*/
     printf("\n >> The ladder has %d stages.\n",i);
     puts("\n Press any key to quit...");
     getch();
+    return 0;
 }
